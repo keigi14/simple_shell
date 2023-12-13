@@ -31,13 +31,13 @@ int _mi_exit(mi_info_on *infom)
 }
 
 /**
- * my_cd - it change the current directry of the process
+ * _mi_cd - it change the current directry of the process
  * @info: Struct containing potential argumenfs.used to maintain
  * constant func prototype you wanna use.
  * Return: 0 Always.
  */
 
-int my_cd(mi_info_on *info)
+int _mi_cd(mi_info_on *info)
 {
 	char buffer[1024], *sing;
 	char *m = getcwd(buffer, 1024);

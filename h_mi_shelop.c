@@ -43,14 +43,14 @@ int h_shy(mi_info_on *infom, char **av)
 }
 
 /**
- * look_builtin - looks for builtin command
+ * _look_builtin - looks for builtin command
  * @infom: the parameter and return info struct
  * Return: -1 if builtin  is not found
  * 1 if builtin found but not successful,
  * 2 if builtin signals exit()
  * 0 if builtin executed successfully
  */
-int look_builtin(mi_info_on *infom)
+int _look_builtin(mi_info_on *infom)
 {
 	int i, built_in_ret = -1;
 	mi_builtin_tab builtintbl[] = {
